@@ -11,7 +11,6 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 RUN npm install -g ionic
-RUN ionic build
 
 # Copy app source
 COPY . .
@@ -20,4 +19,5 @@ COPY . .
 EXPOSE 8100
 
 # Define the Docker image's behavior at runtime
+CMD ["ionic", "build"]
 CMD ["ionic", "serve"]
