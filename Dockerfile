@@ -21,3 +21,4 @@ EXPOSE 8100
 # Define the Docker image's behavior at runtime
 CMD ["ionic", "build"]
 CMD ["ionic", "serve"]
+
